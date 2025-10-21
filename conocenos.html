@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conócenos más - Mi Marca</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">MI MARCA</div>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="conocenos.html" class="activo">Conócenos más</a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle">☰</div>
+  </header>
+
+  <section class="conocenos">
+    <h2>Nuestra esencia</h2>
+    <p>
+      En <strong>Mi Marca</strong> creemos en la fuerza de las mujeres emprendedoras y soñadoras. Ofrecemos ropa al por mayor con una identidad moderna, versátil y elegante.
+    </p>
+    <p>
+      Nos inspiran los colores, las texturas y las historias de quienes visten nuestras prendas. Queremos ser parte de tu crecimiento, acompañarte y ayudarte a vestir tu éxito.
+    </p>
+  </section>
+
+  <footer>
+    <div class="contacto">
+      <h3>Canales de Servicio al Cliente</h3>
+      <p>📞 +57 322 000 0000 | ✉ contacto@mimarca.com</p>
+      <div class="redes">
+        <a href="#"><img src="img/whatsapp.png" alt="WhatsApp" /></a>
+        <a href="#"><img src="img/instagram.png" alt="Instagram" /></a>
+        <a href="#"><img src="img/facebook.png" alt="Facebook" /></a>
+        <a href="#"><img src="img/ubicacion.png" alt="Ubicación" /></a>
+      </div>
+      <p>📍 Calle Ejemplo #123, Bogotá, Colombia</p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.menu ul');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('mostrar');
+    });
+  </script>
+</body>
+</html>
