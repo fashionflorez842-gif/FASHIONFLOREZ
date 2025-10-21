@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Marca de Ropa</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">MI MARCA</div>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html" class="activo">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="conocenos.html">Conócenos más</a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle">☰</div>
+  </header>
+
+  <section class="banner">
+    <img src="img/banner.jpg" alt="Banner principal de la marca" />
+    <div class="texto-banner">
+      <h1>Bienvenidos a <span>MI MARCA</span></h1>
+      <p>Moda al por mayor con estilo y pasión</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="contacto">
+      <h3>Canales de Servicio al Cliente</h3>
+      <p>📞 +57 322 000 0000 | ✉ contacto@mimarca.com</p>
+      <div class="redes">
+        <a href="#"><img src="img/whatsapp.png" alt="WhatsApp" /></a>
+        <a href="#"><img src="img/instagram.png" alt="Instagram" /></a>
+        <a href="#"><img src="img/facebook.png" alt="Facebook" /></a>
+        <a href="#"><img src="img/ubicacion.png" alt="Ubicación" /></a>
+      </div>
+      <p>📍 Calle Ejemplo #123, Bogotá, Colombia</p>
+    </div>
+    <p class="copy">© 2025 Mi Marca. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.menu ul');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('mostrar');
+    });
+  </script>
+</body>
+</html>
