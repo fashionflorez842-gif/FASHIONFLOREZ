@@ -1,154 +1,60 @@
-/* ==== ESTILO BASE ==== */
-body {
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-  background-color: white;
-  color: black;
+:root {
+section {
+padding: 80px;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 40px;
-  border-bottom: 2px solid black;
+
+.section-title {
+font-family: 'Playfair Display', serif;
+font-size: 36px;
+margin-bottom: 16px;
 }
 
-.logo {
-  font-size: 1.8em;
-  font-weight: bold;
-  color: fuchsia;
+
+.section-subtitle {
+color: var(--gray);
+max-width: 600px;
+margin-bottom: 48px;
 }
 
-.menu ul {
-  display: flex;
-  list-style: none;
-  gap: 30px;
-  margin: 0;
-  padding: 0;
+
+.map-container {
+width: 100%;
+height: 450px;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 20px 40px rgba(0,0,0,0.08);
 }
 
-.menu a {
-  text-decoration: none;
-  color: black;
-  font-weight: 500;
-}
 
-.menu a.activo,
-.menu a:hover {
-  color: fuchsia;
-  font-weight: bold;
-}
-
-.menu-toggle {
-  display: none;
-  font-size: 1.8em;
-  cursor: pointer;
-}
-
-/* ==== BANNER ==== */
-.banner {
-  position: relative;
-}
-
-.banner img {
-  width: 100%;
-  height: 85vh;
-  object-fit: cover;
-}
-
-.texto-banner {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  background: rgba(0, 0, 0, 0.4);
-  padding: 30px;
-  border-radius: 10px;
-}
-
-.texto-banner h1 span {
-  color: fuchsia;
-}
-
-/* ==== NOSOTROS ==== */
-.nosotros, .conocenos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 50px 20px;
-  text-align: center;
-}
-
-.foto-duena {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  border: 3px solid fuchsia;
-  object-fit: cover;
-  margin-bottom: 30px;
-}
-
-h2 {
-  color: fuchsia;
-  margin-bottom: 10px;
-}
-
-/* ==== FOOTER ==== */
 footer {
-  text-align: center;
-  border-top: 2px solid black;
-  padding: 30px;
+background: #111;
+color: #fff;
+padding: 40px 80px;
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
 
-footer .redes img {
-  width: 30px;
-  margin: 0 10px;
-  vertical-align: middle;
+
+footer p {
+font-size: 14px;
+color: #ccc;
 }
 
-.copy {
-  font-size: 0.9em;
-  margin-top: 20px;
-  color: #555;
-}
 
-/* ==== RESPONSIVE ==== */
 @media (max-width: 768px) {
-  header {
-    flex-wrap: wrap;
-    padding: 10px 20px;
-  }
+header, section, footer {
+padding: 24px;
+}
 
-  .menu-toggle {
-    display: block;
-  }
 
-  .menu ul {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-    border-top: 1px solid black;
-    margin-top: 10px;
-  }
+.hero h2 {
+font-size: 38px;
+}
 
-  .menu ul.mostrar {
-    display: flex;
-  }
 
-  .banner img {
-    height: 60vh;
-  }
-
-  .texto-banner {
-    padding: 20px;
-  }
-
-  .foto-duena {
-    width: 200px;
-    height: 200px;
-  }
+nav {
+display: none;
+}
 }
